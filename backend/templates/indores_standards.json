@@ -1,0 +1,898 @@
+{
+    "meta": {
+        "version": "3.0",
+        "description": "Template struktur karya tulis ilmiah untuk WriteMate",
+        "note": "Cover, kata pengantar, daftar isi, dan lampiran TIDAK ADA. Fokus pada konten inti akademik.",
+        "excluded": [
+            "cover",
+            "kata_pengantar",
+            "daftar_isi",
+            "lampiran"
+        ]
+    },
+    "core_writing_logic": {
+        "makalah": {
+            "label": "Makalah",
+            "focus": "Analisis logis dan objektif terhadap topik tertentu",
+            "style": "Formal akademik",
+            "audience": [
+                "SMA",
+                "S1"
+            ],
+            "typical_word_count": {
+                "min": 2000,
+                "max": 6000
+            },
+            "has_abstract": false,
+            "has_references": true,
+            "chapters": [
+                {
+                    "id": "bab1",
+                    "title": "BAB I: Pendahuluan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab1_1",
+                            "title": "Latar Belakang",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_2",
+                            "title": "Rumusan Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_3",
+                            "title": "Tujuan Penulisan",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_4",
+                            "title": "Manfaat Penulisan",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.20
+                },
+                {
+                    "id": "bab2",
+                    "title": "BAB II: Pembahasan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab2_1",
+                            "title": "Landasan Teori",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_2",
+                            "title": "Analisis dan Pembahasan",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.55,
+                    "note": "Subchapter dapat disesuaikan dengan topik"
+                },
+                {
+                    "id": "bab3",
+                    "title": "BAB III: Penutup",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab3_1",
+                            "title": "Kesimpulan",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_2",
+                            "title": "Saran",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.15
+                },
+                {
+                    "id": "daftar_pustaka",
+                    "title": "Daftar Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.10,
+                    "note": "Format APA Style. Diisi otomatis dari referensi yang dipilih user."
+                }
+            ]
+        },
+        "essay": {
+            "label": "Essay",
+            "focus": "Argumentasi personal yang logis dan terstruktur terhadap suatu isu",
+            "style": "Semi-formal, mengalir, tidak menggunakan format BAB",
+            "audience": [
+                "SMA",
+                "S1"
+            ],
+            "typical_word_count": {
+                "min": 800,
+                "max": 2500
+            },
+            "has_abstract": false,
+            "has_references": false,
+            "chapters": [
+                {
+                    "id": "pendahuluan",
+                    "title": "Pendahuluan",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.20,
+                    "note": "Hook menarik + thesis statement yang jelas"
+                },
+                {
+                    "id": "argumen_1",
+                    "title": "Argumen Pertama",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.25
+                },
+                {
+                    "id": "argumen_2",
+                    "title": "Argumen Kedua",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.25
+                },
+                {
+                    "id": "argumen_3",
+                    "title": "Argumen Ketiga",
+                    "required": false,
+                    "subchapters": [],
+                    "word_weight": 0.20
+                },
+                {
+                    "id": "kesimpulan",
+                    "title": "Kesimpulan",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.10,
+                    "note": "Restatement thesis + penegasan argumen"
+                }
+            ]
+        },
+        "artikel_ilmiah": {
+            "label": "Artikel Ilmiah",
+            "focus": "Ringkas, atraktif, dan sesuai gaya selingkung jurnal",
+            "style": "Sangat formal, padat, berbasis data dan sitasi",
+            "audience": [
+                "S1",
+                "S2",
+                "Peneliti"
+            ],
+            "typical_word_count": {
+                "min": 3000,
+                "max": 7000
+            },
+            "has_abstract": true,
+            "has_references": true,
+            "chapters": [
+                {
+                    "id": "abstrak",
+                    "title": "Abstrak",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.05,
+                    "note": "Maksimal 250 kata. Berisi tujuan, metode, hasil, kesimpulan. Diakhiri 3-5 kata kunci."
+                },
+                {
+                    "id": "pendahuluan",
+                    "title": "1. Pendahuluan",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.15,
+                    "note": "Latar belakang, gap penelitian, tujuan, dan signifikansi kajian"
+                },
+                {
+                    "id": "tinjauan_pustaka",
+                    "title": "2. Tinjauan Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.20,
+                    "note": "Review literatur yang relevan, kerangka teori, dan posisi penelitian ini"
+                },
+                {
+                    "id": "metodologi",
+                    "title": "3. Metodologi",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.15,
+                    "note": "Jenis penelitian, subjek, teknik pengumpulan data, teknik analisis"
+                },
+                {
+                    "id": "hasil_pembahasan",
+                    "title": "4. Hasil dan Pembahasan",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.30,
+                    "note": "Temuan utama + interpretasi dikaitkan dengan teori dan penelitian terdahulu"
+                },
+                {
+                    "id": "kesimpulan",
+                    "title": "5. Kesimpulan",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.10,
+                    "note": "Ringkasan temuan, implikasi, dan rekomendasi penelitian lanjutan"
+                },
+                {
+                    "id": "daftar_pustaka",
+                    "title": "Daftar Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.05,
+                    "note": "Format APA Style. Diisi otomatis dari referensi yang dipilih user."
+                }
+            ]
+        },
+        "laporan_penelitian": {
+            "label": "Laporan Penelitian",
+            "focus": "Dokumentasi lengkap proses dan hasil penelitian ilmiah",
+            "style": "Formal akademik, sistematis, berbasis data",
+            "audience": [
+                "S1",
+                "S2"
+            ],
+            "typical_word_count": {
+                "min": 5000,
+                "max": 15000
+            },
+            "has_abstract": true,
+            "has_references": true,
+            "chapters": [
+                {
+                    "id": "abstrak",
+                    "title": "Abstrak",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.03,
+                    "note": "Maksimal 300 kata. Tujuan, metode, hasil, kesimpulan, kata kunci."
+                },
+                {
+                    "id": "bab1",
+                    "title": "BAB I: Pendahuluan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab1_1",
+                            "title": "Latar Belakang",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_2",
+                            "title": "Rumusan Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_3",
+                            "title": "Tujuan Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_4",
+                            "title": "Manfaat Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_5",
+                            "title": "Batasan Masalah",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.15
+                },
+                {
+                    "id": "bab2",
+                    "title": "BAB II: Tinjauan Pustaka",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab2_1",
+                            "title": "Landasan Teori",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_2",
+                            "title": "Penelitian Terdahulu",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_3",
+                            "title": "Kerangka Berpikir",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.20
+                },
+                {
+                    "id": "bab3",
+                    "title": "BAB III: Metodologi Penelitian",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab3_1",
+                            "title": "Jenis dan Pendekatan Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_2",
+                            "title": "Subjek dan Lokasi Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_3",
+                            "title": "Teknik Pengumpulan Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_4",
+                            "title": "Teknik Analisis Data",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.17
+                },
+                {
+                    "id": "bab4",
+                    "title": "BAB IV: Hasil dan Pembahasan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab4_1",
+                            "title": "Deskripsi Hasil Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab4_2",
+                            "title": "Pembahasan",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.30
+                },
+                {
+                    "id": "bab5",
+                    "title": "BAB V: Kesimpulan dan Saran",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab5_1",
+                            "title": "Kesimpulan",
+                            "required": true
+                        },
+                        {
+                            "id": "bab5_2",
+                            "title": "Saran",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.10
+                },
+                {
+                    "id": "daftar_pustaka",
+                    "title": "Daftar Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.05,
+                    "note": "Format APA Style. Diisi otomatis dari referensi yang dipilih user."
+                }
+            ]
+        },
+        "proposal_skripsi": {
+            "label": "Proposal Skripsi",
+            "focus": "Rancangan penelitian yang komprehensif dan siap diajukan ke pembimbing",
+            "style": "Formal akademik, argumentatif, berbasis gap penelitian",
+            "audience": [
+                "S1"
+            ],
+            "typical_word_count": {
+                "min": 4000,
+                "max": 10000
+            },
+            "has_abstract": false,
+            "has_references": true,
+            "chapters": [
+                {
+                    "id": "bab1",
+                    "title": "BAB I: Pendahuluan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab1_1",
+                            "title": "Latar Belakang Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_2",
+                            "title": "Identifikasi Masalah",
+                            "required": false
+                        },
+                        {
+                            "id": "bab1_3",
+                            "title": "Rumusan Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_4",
+                            "title": "Tujuan Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_5",
+                            "title": "Manfaat Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_6",
+                            "title": "Batasan Masalah",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.25
+                },
+                {
+                    "id": "bab2",
+                    "title": "BAB II: Tinjauan Pustaka",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab2_1",
+                            "title": "Landasan Teori",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_2",
+                            "title": "Penelitian Terdahulu yang Relevan",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_3",
+                            "title": "Kerangka Berpikir",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_4",
+                            "title": "Hipotesis Penelitian",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.35
+                },
+                {
+                    "id": "bab3",
+                    "title": "BAB III: Metodologi Penelitian",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab3_1",
+                            "title": "Jenis dan Pendekatan Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_2",
+                            "title": "Populasi dan Sampel",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_3",
+                            "title": "Variabel Penelitian",
+                            "required": false
+                        },
+                        {
+                            "id": "bab3_4",
+                            "title": "Instrumen Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_5",
+                            "title": "Teknik Pengumpulan Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_6",
+                            "title": "Teknik Analisis Data",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.30
+                },
+                {
+                    "id": "daftar_pustaka",
+                    "title": "Daftar Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.10,
+                    "note": "Format APA Style. Diisi otomatis dari referensi yang dipilih user."
+                }
+            ]
+        },
+        "skripsi_kualitatif": {
+            "label": "Skripsi (Kualitatif)",
+            "focus": "Analisis interaktif mendalam dengan keabsahan data triangulasi",
+            "style": "Formal akademik, naratif deskriptif, berbasis data lapangan",
+            "audience": [
+                "S1"
+            ],
+            "typical_word_count": {
+                "min": 15000,
+                "max": 40000
+            },
+            "has_abstract": true,
+            "has_references": true,
+            "chapters": [
+                {
+                    "id": "abstrak",
+                    "title": "Abstrak",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.02,
+                    "note": "Maksimal 300 kata. Bahasa Indonesia dan Inggris (bilingual)."
+                },
+                {
+                    "id": "bab1",
+                    "title": "BAB I: Pendahuluan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab1_1",
+                            "title": "Latar Belakang Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_2",
+                            "title": "Fokus Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_3",
+                            "title": "Tujuan Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_4",
+                            "title": "Manfaat Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_5",
+                            "title": "Definisi Istilah",
+                            "required": false
+                        }
+                    ],
+                    "word_weight": 0.12
+                },
+                {
+                    "id": "bab2",
+                    "title": "BAB II: Kajian Pustaka",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab2_1",
+                            "title": "Landasan Teori",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_2",
+                            "title": "Penelitian Terdahulu",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_3",
+                            "title": "Kerangka Konseptual",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.20
+                },
+                {
+                    "id": "bab3",
+                    "title": "BAB III: Metode Penelitian",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab3_1",
+                            "title": "Pendekatan dan Jenis Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_2",
+                            "title": "Kehadiran Peneliti",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_3",
+                            "title": "Lokasi dan Waktu Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_4",
+                            "title": "Sumber Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_5",
+                            "title": "Teknik Pengumpulan Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_6",
+                            "title": "Teknik Analisis Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_7",
+                            "title": "Keabsahan Data",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.15
+                },
+                {
+                    "id": "bab4",
+                    "title": "BAB IV: Paparan Data dan Temuan Penelitian",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab4_1",
+                            "title": "Gambaran Umum Lokasi Penelitian",
+                            "required": false
+                        },
+                        {
+                            "id": "bab4_2",
+                            "title": "Paparan Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab4_3",
+                            "title": "Temuan Penelitian",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.25
+                },
+                {
+                    "id": "bab5",
+                    "title": "BAB V: Pembahasan",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.18,
+                    "note": "Interpretasi temuan dikaitkan dengan teori dan penelitian terdahulu"
+                },
+                {
+                    "id": "bab6",
+                    "title": "BAB VI: Penutup",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab6_1",
+                            "title": "Kesimpulan",
+                            "required": true
+                        },
+                        {
+                            "id": "bab6_2",
+                            "title": "Saran",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.05
+                },
+                {
+                    "id": "daftar_pustaka",
+                    "title": "Daftar Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.03,
+                    "note": "Format APA Style. Diisi otomatis dari referensi yang dipilih user."
+                }
+            ]
+        },
+        "skripsi_kuantitatif": {
+            "label": "Skripsi (Kuantitatif)",
+            "focus": "Pengujian hipotesis berbasis data numerik dengan analisis statistik",
+            "style": "Formal akademik, objektif, berbasis angka dan uji statistik",
+            "audience": [
+                "S1"
+            ],
+            "typical_word_count": {
+                "min": 12000,
+                "max": 35000
+            },
+            "has_abstract": true,
+            "has_references": true,
+            "chapters": [
+                {
+                    "id": "abstrak",
+                    "title": "Abstrak",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.02,
+                    "note": "Maksimal 300 kata. BILINGUAL Indonesia dan Inggris. Wajib menyebut hasil uji statistik secara ringkas."
+                },
+                {
+                    "id": "bab1",
+                    "title": "BAB I: Pendahuluan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab1_1",
+                            "title": "Latar Belakang Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_2",
+                            "title": "Identifikasi Masalah",
+                            "required": false
+                        },
+                        {
+                            "id": "bab1_3",
+                            "title": "Batasan Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_4",
+                            "title": "Rumusan Masalah",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_5",
+                            "title": "Tujuan Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab1_6",
+                            "title": "Manfaat Penelitian",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.12
+                },
+                {
+                    "id": "bab2",
+                    "title": "BAB II: Tinjauan Pustaka",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab2_1",
+                            "title": "Landasan Teori",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_2",
+                            "title": "Penelitian Terdahulu yang Relevan",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_3",
+                            "title": "Kerangka Berpikir",
+                            "required": true
+                        },
+                        {
+                            "id": "bab2_4",
+                            "title": "Hipotesis Penelitian",
+                            "required": true,
+                            "note": "Rumuskan H0 dan H1 secara eksplisit"
+                        }
+                    ],
+                    "word_weight": 0.20
+                },
+                {
+                    "id": "bab3",
+                    "title": "BAB III: Metode Penelitian",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab3_1",
+                            "title": "Jenis dan Desain Penelitian",
+                            "required": true,
+                            "note": "Sebutkan: eksperimen/korelasional/komparatif/survei"
+                        },
+                        {
+                            "id": "bab3_2",
+                            "title": "Tempat dan Waktu Penelitian",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_3",
+                            "title": "Populasi dan Sampel",
+                            "required": true,
+                            "note": "Jelaskan teknik sampling"
+                        },
+                        {
+                            "id": "bab3_4",
+                            "title": "Variabel Penelitian",
+                            "required": true,
+                            "note": "Definisikan variabel X dan Y secara operasional"
+                        },
+                        {
+                            "id": "bab3_5",
+                            "title": "Teknik Pengumpulan Data",
+                            "required": true
+                        },
+                        {
+                            "id": "bab3_6",
+                            "title": "Instrumen Penelitian",
+                            "required": true,
+                            "note": "Jelaskan uji validitas dan reliabilitas"
+                        },
+                        {
+                            "id": "bab3_7",
+                            "title": "Uji Prasyarat Analisis",
+                            "required": false,
+                            "note": "Normalitas, homogenitas, linieritas"
+                        },
+                        {
+                            "id": "bab3_8",
+                            "title": "Teknik Analisis Data",
+                            "required": true,
+                            "note": "Uji t, uji F, regresi, korelasi Pearson, dll"
+                        }
+                    ],
+                    "word_weight": 0.18
+                },
+                {
+                    "id": "bab4",
+                    "title": "BAB IV: Hasil Penelitian dan Pembahasan",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab4_1",
+                            "title": "Deskripsi Data",
+                            "required": true,
+                            "note": "Mean, median, modus, standar deviasi, distribusi frekuensi"
+                        },
+                        {
+                            "id": "bab4_2",
+                            "title": "Uji Prasyarat",
+                            "required": false,
+                            "note": "Hasil uji normalitas dan homogenitas"
+                        },
+                        {
+                            "id": "bab4_3",
+                            "title": "Uji Hipotesis",
+                            "required": true,
+                            "note": "Hasil uji statistik, p-value, keputusan H0/H1"
+                        },
+                        {
+                            "id": "bab4_4",
+                            "title": "Pembahasan",
+                            "required": true,
+                            "note": "Interpretasi hasil dikaitkan teori dan penelitian terdahulu"
+                        }
+                    ],
+                    "word_weight": 0.33
+                },
+                {
+                    "id": "bab5",
+                    "title": "BAB V: Kesimpulan dan Saran",
+                    "required": true,
+                    "subchapters": [
+                        {
+                            "id": "bab5_1",
+                            "title": "Kesimpulan",
+                            "required": true,
+                            "note": "Jawab rumusan masalah berdasarkan hasil uji hipotesis"
+                        },
+                        {
+                            "id": "bab5_2",
+                            "title": "Saran",
+                            "required": true
+                        }
+                    ],
+                    "word_weight": 0.10
+                },
+                {
+                    "id": "daftar_pustaka",
+                    "title": "Daftar Pustaka",
+                    "required": true,
+                    "subchapters": [],
+                    "word_weight": 0.05,
+                    "note": "Format APA Style. Diisi otomatis dari referensi yang dipilih user."
+                }
+            ]
+        }
+    }
+}

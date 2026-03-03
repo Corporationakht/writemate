@@ -1,0 +1,112 @@
+{
+    "meta": {
+        "version": "2.0",
+        "description": "Prompt template per subbab untuk mengatur hasil generate AI di WriteMate",
+        "usage": "Gunakan {{topic}}, {{audience}}, {{language}}, {{word_count}}, {{references}} sebagai variabel dinamis",
+        "variables": {
+            "{{topic}}": "Topik/judul karya tulis dari input user",
+            "{{audience}}": "Target pembaca: SMA / S1 / S2",
+            "{{language}}": "Gaya bahasa: formal / semi-formal",
+            "{{word_count}}": "Target jumlah kata untuk subbab ini",
+            "{{references}}": "Daftar referensi yang dipilih user dari hasil pencarian"
+        }
+    },
+    "global_rules": {
+        "description": "Aturan yang SELALU disertakan di semua generate",
+        "rules": [
+            "Tulis dalam bahasa Indonesia {{language}}",
+            "Target pembaca adalah {{audience}}",
+            "JANGAN menulis judul bab atau subbab di dalam teks — hanya tulis isi kontennya saja",
+            "JANGAN mengulang konten yang sudah ada di bab sebelumnya",
+            "JANGAN menggunakan kalimat pembuka klise seperti 'Pada era globalisasi ini', 'Di zaman modern', 'Seiring perkembangan zaman'",
+            "Setiap klaim faktual harus didukung sitasi dari referensi yang diberikan",
+            "Gunakan format sitasi APA Style dalam teks: (Nama, Tahun)",
+            "Panjang teks sekitar {{word_count}} kata",
+            "Gunakan referensi berikut jika tersedia: {{references}}"
+        ]
+    },
+    "chapter_prompts": {
+        "makalah": {
+            "bab1_latar_belakang": {
+                "label": "Latar Belakang",
+                "prompt": "Buatkan latar belakang untuk makalah tentang '{{topic}}' dengan struktur berikut: (1) Pengantar yang menjelaskan konteks dan signifikansi topik secara umum, (2) Kondisi atau fakta terkini yang relevan dengan topik, (3) Permasalahan atau isu utama yang melatarbelakangi penulisan makalah ini, (4) Alasan mengapa topik ini penting untuk dibahas, (5) Penutup yang menghubungkan latar belakang dengan tujuan penulisan. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+            },
+            "bab1_rumusan_masalah": {
+                "label": "Rumusan Masalah",
+                "prompt": "Buatkan rumusan masalah untuk makalah tentang '{{topic}}' dalam bentuk 2-3 pertanyaan yang: (1) Fokus pada isu utama yang dibahas dalam makalah, (2) Dapat dijawab melalui kajian literatur dan analisis, (3) Saling berkaitan dan membangun alur pembahasan yang logis. Tulis hanya pertanyaannya tanpa penjelasan panjang."
+            },
+            "bab1_tujuan_penulisan": {
+                "label": "Tujuan Penulisan",
+                "prompt": "Tulis tujuan penulisan makalah tentang '{{topic}}' yang menjawab setiap rumusan masalah secara langsung. Gunakan kata kerja: menjelaskan, mendeskripsikan, menganalisis, menguraikan, memaparkan. Tulis dalam poin-poin yang jelas dan spesifik."
+            },
+            "bab1_manfaat_penulisan": {
+                "label": "Manfaat Penulisan",
+                "prompt": "Tuliskan manfaat penulisan makalah tentang '{{topic}}' yang dibagi menjadi: (1) Manfaat Teoretis: kontribusi terhadap pemahaman konsep atau teori yang relevan, (2) Manfaat Praktis: manfaat konkret bagi pembaca atau pihak terkait. Minimal 2 poin per bagian."
+            },
+            "bab2_landasan_teori": {
+                "label": "Landasan Teori",
+                "prompt": "Tuliskan landasan teori untuk makalah tentang '{{topic}}'. Bahas: (1) Konsep dan definisi utama dari topik menurut minimal 3 ahli yang relevan, (2) Teori-teori pendukung yang berkaitan dengan topik, (3) Keterkaitan antar konsep yang akan dibahas. Hindari sekadar mendaftar definisi — kembangkan dengan analisis dan keterkaitan antar teori. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+            },
+            "bab2_analisis_pembahasan": {
+                "label": "Analisis dan Pembahasan",
+                "prompt": "Tulis analisis dan pembahasan untuk makalah tentang '{{topic}}'. Struktur: (1) Bahas setiap rumusan masalah secara mendalam dan berurutan, (2) Hubungkan fakta/data dengan teori yang telah dipaparkan, (3) Berikan analisis kritis — jangan hanya mendeskripsikan, tapi interpretasikan maknanya, (4) Gunakan data, contoh, atau kasus konkret untuk memperkuat argumen. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+            },
+            "bab3_kesimpulan": {
+                "label": "Kesimpulan",
+                "prompt": "Tuliskan kesimpulan makalah tentang '{{topic}}' dalam poin-poin yang menjawab setiap rumusan masalah secara langsung dan berurutan. Setiap poin harus: (1) Singkat, padat, dan jelas, (2) Merupakan sintesis dari pembahasan, (3) Tidak mengandung informasi baru yang belum dibahas sebelumnya."
+            },
+            "bab3_saran": {
+                "label": "Saran",
+                "prompt": "Buatkan saran berdasarkan hasil pembahasan makalah tentang '{{topic}}'. Saran harus: (1) Spesifik dan realistis, (2) Ditujukan kepada pihak yang relevan (sebutkan eksplisit), (3) Benar-benar bersumber dari kesimpulan yang telah ditarik. Minimal 3 saran."
+            }
+        },
+        "essay": {
+            "pendahuluan": {
+                "label": "Pendahuluan",
+                "prompt": "Tulis pendahuluan essay tentang '{{topic}}' yang terdiri dari: (1) Hook/kalimat pembuka yang kuat dan menarik perhatian pembaca (bisa berupa fakta mengejutkan, pertanyaan retoris, atau kutipan relevan), (2) Konteks singkat yang memberikan latar belakang topik, (3) Thesis statement yang jelas — pernyataan posisi/argumen utama penulis terhadap topik ini. Gaya penulisan: {{language}}, mengalir dan tidak kaku. Panjang sekitar {{word_count}} kata."
+            },
+            "argumen_1": {
+                "label": "Argumen Pertama",
+                "prompt": "Tulis argumen pertama untuk essay tentang '{{topic}}'. Struktur paragraf argumen: (1) Kalimat topik yang menyatakan argumen pertama dengan jelas, (2) Elaborasi dan penjelasan mengapa argumen ini valid, (3) Bukti, data, atau contoh konkret yang mendukung argumen, (4) Kalimat penutup yang menghubungkan argumen ini dengan thesis statement. Gaya penulisan mengalir dan argumentatif. Panjang sekitar {{word_count}} kata."
+            },
+            "argumen_2": {
+                "label": "Argumen Kedua",
+                "prompt": "Tulis argumen kedua untuk essay tentang '{{topic}}' yang memperkuat atau melengkapi argumen pertama. Struktur: (1) Kalimat transisi yang menghubungkan dengan argumen sebelumnya, (2) Pernyataan argumen kedua yang berbeda dari argumen pertama, (3) Bukti, data, atau contoh yang mendukung, (4) Kalimat penutup yang memperkuat posisi thesis. Panjang sekitar {{word_count}} kata."
+            },
+            "argumen_3": {
+                "label": "Argumen Ketiga",
+                "prompt": "Tulis argumen ketiga untuk essay tentang '{{topic}}' sebagai argumen penguat terakhir sebelum kesimpulan. Bisa berupa: (1) Argumen yang menjawab counter-argument, (2) Atau argumen pendukung tambahan yang paling kuat. Struktur sama: kalimat topik lalu elaborasi lalu bukti lalu kalimat penutup. Panjang sekitar {{word_count}} kata."
+            },
+            "kesimpulan": {
+                "label": "Kesimpulan",
+                "prompt": "Tulis kesimpulan essay tentang '{{topic}}' yang terdiri dari: (1) Restatement thesis dalam kalimat yang berbeda dari pendahuluan, (2) Rangkuman singkat dari ketiga argumen utama, (3) Pernyataan penutup yang berkesan — bisa berupa ajakan bertindak, refleksi, atau pandangan ke depan terkait topik. Hindari mengulang kata per kata dari pendahuluan. Panjang sekitar {{word_count}} kata."
+            }
+        },
+        "artikel_ilmiah": {
+            "abstrak": {
+                "label": "Abstrak",
+                "prompt": "Tulis abstrak artikel ilmiah tentang '{{topic}}' dengan ketentuan: (1) Maksimal 250 kata dalam satu paragraf, (2) Struktur IMRAD singkat: latar belakang/tujuan (1-2 kalimat), metode penelitian (1-2 kalimat), hasil utama (2-3 kalimat), kesimpulan (1-2 kalimat), (3) Ditulis dalam bahasa yang ringkas, padat, dan informatif, (4) Diakhiri dengan 3-5 kata kunci (Keywords) yang relevan. JANGAN gunakan singkatan yang tidak umum. Tidak perlu referensi di bagian ini."
+            },
+            "pendahuluan": {
+                "label": "Pendahuluan",
+                "prompt": "Tulis pendahuluan artikel ilmiah tentang '{{topic}}' dengan struktur: (1) Paparan fenomena/masalah yang menjadi latar belakang penelitian didukung data terkini, (2) Review singkat penelitian terdahulu yang relevan untuk menunjukkan gap penelitian, (3) Pernyataan gap penelitian yang jelas, (4) Tujuan penelitian yang spesifik, (5) Signifikansi dan kontribusi penelitian ini terhadap bidang ilmu. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+            },
+            "tinjauan_pustaka": {
+                "label": "Tinjauan Pustaka",
+                "prompt": "Tulis tinjauan pustaka artikel ilmiah tentang '{{topic}}'. Struktur: (1) Review dan sintesis literatur yang relevan, (2) Kerangka teori yang digunakan sebagai landasan penelitian, (3) Identifikasi gap penelitian yang diperkuat dari literatur, (4) Posisi penelitian ini dalam konteks literatur yang ada. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+            },
+            "metodologi": {
+                "label": "Metodologi",
+                "prompt": "Tulis bagian metodologi artikel ilmiah tentang '{{topic}}' secara ringkas dan padat (maksimal 1-2 paragraf). Langsung sebutkan pendekatan utama, subjek penelitian, sumber data, dan cara analisisnya secara aplikatif. Dilarang mendefinisikan teori metodologi itu sendiri (jangan mengutip teori tentang apa itu kualitatif/kuantitatif). Dilarang menulis layaknya Metodologi Skripsi/Proposal yang bertele-tele. Panjang sekitar {{word_count}} kata."
+            },
+            "hasil_pembahasan": {
+                "label": "Hasil dan Pembahasan",
+                "prompt": "Tulis bagian hasil dan pembahasan artikel ilmiah tentang '{{topic}}'. Struktur: (1) Sajikan temuan utama secara sistematis, (2) Interpretasikan setiap temuan secara kritis, (3) Hubungkan dengan teori dan penelitian terdahulu, (4) Diskusikan implikasi temuan terhadap bidang ilmu. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+            },
+            "kesimpulan": {
+                "label": "Kesimpulan",
+                "prompt": "Tulis kesimpulan artikel ilmiah tentang '{{topic}}'. Uraikan: (1) Ringkasan temuan utama yang menjawab tujuan penelitian, (2) Implikasi teoretis dan praktis, (3) Keterbatasan penelitian, (4) Rekomendasi untuk penelitian selanjutnya. Tulis ringkas dan padat, tidak lebih dari 300 kata."
+            }
+        }
+    }
+}

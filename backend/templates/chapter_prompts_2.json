@@ -1,0 +1,138 @@
+{
+    "laporan_penelitian": {
+        "abstrak": {
+            "label": "Abstrak",
+            "prompt": "Tulis abstrak laporan penelitian tentang '{{topic}}' dengan ketentuan: (1) Maksimal 300 kata, (2) Mencakup: tujuan penelitian, metode yang digunakan, hasil/temuan utama, kesimpulan, (3) Ditulis dalam satu paragraf yang padat dan informatif, (4) Diakhiri dengan 3-5 kata kunci. Gunakan bahasa formal dan hindari singkatan yang tidak umum."
+        },
+        "bab1_latar_belakang": {
+            "label": "Latar Belakang",
+            "prompt": "Buatkan latar belakang laporan penelitian tentang '{{topic}}' dengan struktur: (1) Kondisi ideal berdasarkan teori atau kebijakan yang relevan, (2) Kondisi nyata di lapangan yang berbeda dari kondisi ideal, (3) Kesenjangan yang menjadi dasar masalah penelitian didukung data empiris, (4) Pentingnya penelitian ini dilakukan, (5) Gambaran singkat tentang pendekatan yang akan digunakan. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab1_rumusan_masalah": {
+            "label": "Rumusan Masalah",
+            "prompt": "Buatkan rumusan masalah laporan penelitian tentang '{{topic}}' dalam 2-4 pertanyaan yang: (1) Spesifik, terarah, dan dapat dijawab melalui penelitian, (2) Mencerminkan jenis penelitian yang digunakan, (3) Saling berkaitan dan membangun alur penelitian yang logis."
+        },
+        "bab1_tujuan_penelitian": {
+            "label": "Tujuan Penelitian",
+            "prompt": "Tulis tujuan penelitian laporan tentang '{{topic}}' yang menjawab setiap rumusan masalah secara langsung. Gunakan kata kerja operasional yang sesuai dengan jenis penelitian. Tulis dalam poin-poin yang spesifik dan terukur."
+        },
+        "bab1_manfaat_penelitian": {
+            "label": "Manfaat Penelitian",
+            "prompt": "Tuliskan manfaat penelitian tentang '{{topic}}' yang dibagi menjadi: (1) Manfaat Teoretis: kontribusi terhadap pengembangan ilmu, (2) Manfaat Praktis: manfaat konkret bagi institusi/pihak terkait. Minimal 2 poin per bagian, spesifik dan realistis."
+        },
+        "bab1_batasan_masalah": {
+            "label": "Batasan Masalah",
+            "prompt": "Tuliskan batasan masalah laporan penelitian tentang '{{topic}}' yang membatasi secara eksplisit: (1) Variabel atau aspek yang diteliti, (2) Subjek atau populasi penelitian, (3) Lokasi penelitian, (4) Periode waktu penelitian."
+        },
+        "bab2_landasan_teori": {
+            "label": "Landasan Teori",
+            "prompt": "Tuliskan landasan teori untuk laporan penelitian tentang '{{topic}}'. Bahas setiap konsep/variabel utama: (1) Definisi menurut minimal 3 ahli, (2) Dimensi dan indikator konsep, (3) Teori-teori relevan yang mendukung penelitian, (4) Keterkaitan antar konsep. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab2_penelitian_terdahulu": {
+            "label": "Penelitian Terdahulu",
+            "prompt": "Buatkan kajian penelitian terdahulu untuk laporan penelitian tentang '{{topic}}'. Setiap penelitian memuat: peneliti dan tahun, judul, metode, hasil utama, relevansi. Minimal 4 penelitian. Di akhir jelaskan posisi orisinalitas penelitian ini. Gunakan referensi: {{references}}."
+        },
+        "bab2_kerangka_berpikir": {
+            "label": "Kerangka Berpikir",
+            "prompt": "Susun kerangka berpikir untuk laporan penelitian tentang '{{topic}}'. Uraikan alur logika dari: fenomena/masalah lalu teori pendukung lalu pendekatan penelitian lalu hasil yang diharapkan. Tulis dalam narasi paragraf yang mengalir dan logis."
+        },
+        "bab3_jenis_penelitian": {
+            "label": "Jenis dan Pendekatan Penelitian",
+            "prompt": "Jelaskan jenis dan pendekatan penelitian untuk laporan tentang '{{topic}}'. Uraikan: (1) Jenis penelitian yang dipilih beserta definisinya, (2) Pendekatan yang digunakan dan alasan pemilihannya, (3) Karakteristik penelitian ini yang sesuai dengan jenis yang dipilih. Dukung dengan referensi metodologi: {{references}}."
+        },
+        "bab3_subjek_lokasi": {
+            "label": "Subjek dan Lokasi Penelitian",
+            "prompt": "Jelaskan subjek dan lokasi penelitian untuk laporan tentang '{{topic}}'. Uraikan: (1) Deskripsi subjek/informan/responden dan kriteria pemilihannya, (2) Teknik penentuan subjek penelitian, (3) Deskripsi lokasi penelitian dan alasan pemilihannya, (4) Waktu pelaksanaan penelitian."
+        },
+        "bab3_teknik_pengumpulan_data": {
+            "label": "Teknik Pengumpulan Data",
+            "prompt": "Jelaskan teknik pengumpulan data untuk laporan penelitian tentang '{{topic}}'. Uraikan setiap teknik yang digunakan secara operasional: cara pelaksanaan, alat yang digunakan, dan data yang ingin diperoleh dari setiap teknik."
+        },
+        "bab3_teknik_analisis_data": {
+            "label": "Teknik Analisis Data",
+            "prompt": "Tuliskan teknik analisis data untuk laporan penelitian tentang '{{topic}}'. Uraikan tahapan analisis secara operasional sesuai jenis penelitian yang digunakan."
+        },
+        "bab4_deskripsi_hasil": {
+            "label": "Deskripsi Hasil Penelitian",
+            "prompt": "Tuliskan deskripsi hasil penelitian untuk laporan tentang '{{topic}}'. Sajikan: (1) Gambaran umum hasil yang diperoleh, (2) Temuan untuk setiap rumusan masalah secara sistematis, (3) Deskripsi data dalam bentuk narasi. Pastikan deskripsi murni faktual tanpa interpretasi mendalam."
+        },
+        "bab4_pembahasan": {
+            "label": "Pembahasan",
+            "prompt": "Buat pembahasan hasil penelitian tentang '{{topic}}'. Untuk setiap temuan: (1) Interpretasikan makna temuan secara kritis, (2) Hubungkan dengan teori di Bab II, (3) Bandingkan dengan penelitian terdahulu, (4) Jelaskan faktor-faktor yang mempengaruhi hasil. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab5_kesimpulan": {
+            "label": "Kesimpulan",
+            "prompt": "Tuliskan kesimpulan laporan penelitian tentang '{{topic}}' dalam poin-poin yang menjawab setiap rumusan masalah secara langsung dan berurutan."
+        },
+        "bab5_saran": {
+            "label": "Saran",
+            "prompt": "Buatkan saran laporan penelitian tentang '{{topic}}' yang dibagi menjadi: (1) Saran Teoretis: untuk peneliti selanjutnya, (2) Saran Praktis: rekomendasi konkret untuk pihak-pihak yang relevan."
+        }
+    },
+    "proposal_skripsi": {
+        "bab1_latar_belakang": {
+            "label": "Latar Belakang Masalah",
+            "prompt": "Buatkan latar belakang masalah proposal skripsi tentang '{{topic}}' dengan struktur: (1) Kondisi ideal berdasarkan teori atau kebijakan, (2) Kondisi nyata yang menunjukkan adanya masalah diperkuat data empiris/statistik terkini, (3) Gap antara kondisi ideal dan nyata sebagai justifikasi penelitian, (4) Pentingnya penelitian ini dilakukan, (5) Pendekatan yang akan digunakan. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab1_identifikasi_masalah": {
+            "label": "Identifikasi Masalah",
+            "prompt": "Tuliskan identifikasi masalah proposal skripsi tentang '{{topic}}'. Identifikasi berbagai masalah dalam bentuk pernyataan masalah (bukan pertanyaan). Minimal 3-5 masalah yang teridentifikasi."
+        },
+        "bab1_rumusan_masalah": {
+            "label": "Rumusan Masalah",
+            "prompt": "Buatkan rumusan masalah proposal skripsi tentang '{{topic}}' dalam 2-3 pertanyaan yang: (1) Berfokus pada masalah utama, (2) Spesifik dan dapat diteliti, (3) Mencerminkan hubungan antar variabel atau fokus penelitian yang jelas."
+        },
+        "bab1_tujuan_penelitian": {
+            "label": "Tujuan Penelitian",
+            "prompt": "Tulis tujuan penelitian proposal skripsi tentang '{{topic}}' yang menjawab setiap rumusan masalah secara langsung. Gunakan kata kerja operasional yang sesuai."
+        },
+        "bab1_manfaat_penelitian": {
+            "label": "Manfaat Penelitian",
+            "prompt": "Tuliskan manfaat penelitian proposal skripsi tentang '{{topic}}' dalam dua bagian: (1) Manfaat Teoretis, (2) Manfaat Praktis. Minimal 2 poin per bagian."
+        },
+        "bab1_batasan_masalah": {
+            "label": "Batasan Masalah",
+            "prompt": "Tuliskan batasan masalah proposal skripsi tentang '{{topic}}' yang membatasi: (1) Variabel/aspek yang diteliti, (2) Subjek/populasi, (3) Lokasi, (4) Periode waktu."
+        },
+        "bab2_landasan_teori": {
+            "label": "Landasan Teori",
+            "prompt": "Tuliskan landasan teori untuk proposal skripsi tentang '{{topic}}'. Bahas setiap variabel/konsep utama secara mendalam: (1) Definisi dari minimal 3 ahli, (2) Dimensi dan indikator, (3) Faktor-faktor yang mempengaruhi, (4) Hubungan teoretis antar variabel. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab2_penelitian_terdahulu": {
+            "label": "Penelitian Terdahulu yang Relevan",
+            "prompt": "Buatkan kajian penelitian terdahulu untuk proposal skripsi tentang '{{topic}}'. Minimal 5 penelitian. Sertakan yang mendukung dan yang berbeda. Jelaskan orisinalitas penelitian ini. Gunakan referensi: {{references}}."
+        },
+        "bab2_kerangka_berpikir": {
+            "label": "Kerangka Berpikir",
+            "prompt": "Susun kerangka berpikir proposal skripsi tentang '{{topic}}'. Uraikan: (1) Alur logika hubungan antar variabel berdasarkan teori, (2) Penjelasan mengapa variabel X berkaitan dengan variabel Y, (3) Gambaran model penelitian dalam narasi."
+        },
+        "bab2_hipotesis": {
+            "label": "Hipotesis Penelitian",
+            "prompt": "Rumuskan hipotesis proposal skripsi tentang '{{topic}}'. Untuk setiap rumusan masalah tulis: (1) H0: tidak ada pengaruh/hubungan, (2) H1/Ha: ada pengaruh/hubungan. Tambahkan dasar teoretis singkat."
+        },
+        "bab3_jenis_penelitian": {
+            "label": "Jenis dan Pendekatan Penelitian",
+            "prompt": "Jelaskan jenis dan pendekatan penelitian untuk proposal skripsi tentang '{{topic}}'. Uraikan: (1) Jenis penelitian dan definisinya, (2) Pendekatan beserta alasan kuat, (3) Desain penelitian spesifik. Dukung dengan referensi: {{references}}."
+        },
+        "bab3_populasi_sampel": {
+            "label": "Populasi dan Sampel",
+            "prompt": "Tuliskan populasi dan sampel proposal skripsi tentang '{{topic}}'. Uraikan: (1) Definisi dan karakteristik populasi, (2) Teknik sampling beserta alasan, (3) Cara menentukan jumlah sampel, (4) Kriteria inklusi dan eksklusi."
+        },
+        "bab3_variabel_penelitian": {
+            "label": "Variabel Penelitian",
+            "prompt": "Definisikan variabel penelitian untuk proposal skripsi tentang '{{topic}}'. Uraikan: (1) Variabel bebas (X): definisi konseptual dan operasional, (2) Variabel terikat (Y): definisi konseptual dan operasional, (3) Indikator setiap variabel, (4) Skala pengukuran."
+        },
+        "bab3_instrumen_penelitian": {
+            "label": "Instrumen Penelitian",
+            "prompt": "Jelaskan instrumen penelitian untuk proposal skripsi tentang '{{topic}}'. Uraikan: (1) Jenis instrumen, (2) Kisi-kisi instrumen berdasarkan dimensi dan indikator, (3) Rencana uji validitas dan reliabilitas."
+        },
+        "bab3_teknik_pengumpulan_data": {
+            "label": "Teknik Pengumpulan Data",
+            "prompt": "Jelaskan teknik pengumpulan data untuk proposal skripsi tentang '{{topic}}'. Uraikan setiap teknik secara operasional: jenis teknik, cara pelaksanaan, dan jenis data yang diperoleh."
+        },
+        "bab3_teknik_analisis_data": {
+            "label": "Teknik Analisis Data",
+            "prompt": "Tuliskan teknik analisis data untuk proposal skripsi tentang '{{topic}}'. Sesuaikan dengan pendekatan penelitian. Dukung dengan referensi: {{references}}."
+        }
+    }
+}

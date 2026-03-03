@@ -1,0 +1,194 @@
+{
+    "skripsi_kualitatif": {
+        "abstrak": {
+            "label": "Abstrak",
+            "prompt": "Tulis abstrak skripsi kualitatif tentang '{{topic}}' dalam DUA versi: (1) Bahasa Indonesia: maks 300 kata, satu paragraf, mencakup tujuan, pendekatan/metode, temuan utama, kesimpulan, diakhiri 3-5 kata kunci, (2) Bahasa Inggris (Abstract): terjemahan akurat dan akademis."
+        },
+        "bab1_latar_belakang": {
+            "label": "Latar Belakang Masalah",
+            "prompt": "Buatkan latar belakang masalah skripsi kualitatif tentang '{{topic}}' dengan struktur: (1) Kondisi ideal/normatif, (2) Kondisi nyata di lapangan, (3) Kesenjangan sebagai dasar masalah, (4) Data empiris atau fenomena terkini, (5) Justifikasi pendekatan kualitatif, (6) Penutup mengarah ke fokus penelitian. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab1_fokus_penelitian": {
+            "label": "Fokus Penelitian",
+            "prompt": "Tuliskan fokus penelitian skripsi kualitatif tentang '{{topic}}'. Fokus penelitian kualitatif berupa pernyataan yang membatasi ruang lingkup (bukan pertanyaan). Uraikan: (1) Aspek utama, (2) Konteks dan batasan, (3) Subfokus jika ada. Tulis 2-3 poin fokus."
+        },
+        "bab1_tujuan_penelitian": {
+            "label": "Tujuan Penelitian",
+            "prompt": "Tulis tujuan penelitian skripsi kualitatif tentang '{{topic}}' yang selaras dengan fokus penelitian. Gunakan kata kerja: mendeskripsikan, menganalisis, mengidentifikasi, mengeksplorasi, memahami, menginterpretasikan."
+        },
+        "bab1_manfaat_penelitian": {
+            "label": "Manfaat Penelitian",
+            "prompt": "Tuliskan manfaat penelitian skripsi kualitatif tentang '{{topic}}': (1) Manfaat Teoretis, (2) Manfaat Praktis. Minimal 2 poin per bagian."
+        },
+        "bab1_definisi_istilah": {
+            "label": "Definisi Istilah",
+            "prompt": "Tuliskan definisi istilah-istilah kunci skripsi kualitatif tentang '{{topic}}'. Definisikan secara konseptual dan operasional. Minimal 3-5 istilah. Gunakan referensi: {{references}}."
+        },
+        "bab2_landasan_teori": {
+            "label": "Landasan Teori",
+            "prompt": "Tuliskan landasan teori skripsi kualitatif tentang '{{topic}}'. Bahas: (1) Definisi dari minimal 3 ahli, (2) Karakteristik dan dimensi konsep, (3) Teori-teori relevan, (4) Keterkaitan antar konsep. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab2_penelitian_terdahulu": {
+            "label": "Penelitian Terdahulu",
+            "prompt": "Buatkan kajian penelitian terdahulu skripsi kualitatif tentang '{{topic}}'. Minimal 5 penelitian. Sertakan yang mendukung dan berbeda. Jelaskan orisinalitas. Gunakan referensi: {{references}}."
+        },
+        "bab2_kerangka_konseptual": {
+            "label": "Kerangka Konseptual",
+            "prompt": "Susun kerangka konseptual skripsi kualitatif tentang '{{topic}}'. Uraikan: (1) Hubungan antar konsep/tema, (2) Alur logika, (3) Mengapa kerangka ini tepat. Tulis dalam narasi paragraf."
+        },
+        "bab3_pendekatan_penelitian": {
+            "label": "Pendekatan dan Jenis Penelitian",
+            "prompt": "Jelaskan pendekatan dan jenis penelitian kualitatif untuk skripsi tentang '{{topic}}'. Uraikan: (1) Jenis kualitatif yang dipilih, (2) Alasan kuat pemilihan, (3) Paradigma penelitian. Dukung dengan referensi: {{references}}."
+        },
+        "bab3_kehadiran_peneliti": {
+            "label": "Kehadiran Peneliti",
+            "prompt": "Tuliskan kehadiran peneliti dalam skripsi kualitatif tentang '{{topic}}'. Uraikan: (1) Posisi peneliti sebagai instrumen utama, (2) Peran di lapangan, (3) Upaya menjaga objektivitas, (4) Latar belakang peneliti yang relevan."
+        },
+        "bab3_lokasi_waktu": {
+            "label": "Lokasi dan Waktu Penelitian",
+            "prompt": "Jelaskan lokasi dan waktu penelitian kualitatif tentang '{{topic}}'. Uraikan: (1) Deskripsi lokasi, (2) Alasan pemilihan, (3) Timeline penelitian."
+        },
+        "bab3_sumber_data": {
+            "label": "Sumber Data",
+            "prompt": "Jelaskan sumber data skripsi kualitatif tentang '{{topic}}'. Bedakan: (1) Data primer: informan/subjek dan kriteria pemilihan, (2) Data sekunder: dokumen dan arsip pendukung."
+        },
+        "bab3_teknik_pengumpulan_data": {
+            "label": "Teknik Pengumpulan Data",
+            "prompt": "Jelaskan teknik pengumpulan data skripsi kualitatif tentang '{{topic}}': (1) Observasi, (2) Wawancara mendalam, (3) Dokumentasi. Jelaskan bagaimana ketiga teknik saling melengkapi untuk triangulasi."
+        },
+        "bab3_teknik_analisis_data": {
+            "label": "Teknik Analisis Data",
+            "prompt": "Tuliskan teknik analisis data skripsi kualitatif tentang '{{topic}}' model Miles dan Huberman: (1) Reduksi data, (2) Penyajian data, (3) Penarikan kesimpulan dan verifikasi. Dukung dengan referensi: {{references}}."
+        },
+        "bab3_keabsahan_data": {
+            "label": "Keabsahan Data",
+            "prompt": "Jelaskan teknik keabsahan data skripsi kualitatif tentang '{{topic}}': (1) Triangulasi sumber, (2) Triangulasi teknik, (3) Member check, (4) Perpanjangan pengamatan. Dukung dengan referensi: {{references}}."
+        },
+        "bab4_gambaran_lokasi": {
+            "label": "Gambaran Umum Lokasi Penelitian",
+            "prompt": "Tuliskan gambaran umum lokasi penelitian skripsi kualitatif tentang '{{topic}}': (1) Profil singkat lokasi, (2) Kondisi relevan dengan topik, (3) Alasan relevansi."
+        },
+        "bab4_paparan_data": {
+            "label": "Paparan Data",
+            "prompt": "Tuliskan paparan data skripsi kualitatif tentang '{{topic}}' per fokus penelitian: (1) Data observasi, (2) Data wawancara — gunakan kutipan langsung, (3) Data dokumentasi. Pastikan paparan murni deskriptif dan faktual."
+        },
+        "bab4_temuan_penelitian": {
+            "label": "Temuan Penelitian",
+            "prompt": "Tuliskan temuan penelitian skripsi kualitatif tentang '{{topic}}': (1) Identifikasi tema-tema utama, (2) Sajikan setiap temuan sebagai proposisi didukung bukti, (3) Hubungkan antar temuan, (4) Pastikan menjawab fokus penelitian."
+        },
+        "bab5_pembahasan": {
+            "label": "Pembahasan",
+            "prompt": "Buat pembahasan skripsi kualitatif tentang '{{topic}}'. Untuk setiap temuan: (1) Hubungkan dengan teori Bab II, (2) Bandingkan dengan penelitian terdahulu, (3) Interpretasikan makna secara kritis, (4) Jelaskan mengapa temuan terjadi. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab6_kesimpulan": {
+            "label": "Kesimpulan",
+            "prompt": "Tuliskan kesimpulan skripsi kualitatif tentang '{{topic}}' dalam poin-poin yang menjawab setiap fokus penelitian. Setiap poin: singkat, padat, merupakan sintesis temuan."
+        },
+        "bab6_saran": {
+            "label": "Saran",
+            "prompt": "Buatkan saran skripsi kualitatif tentang '{{topic}}': (1) Saran Teoretis untuk penelitian selanjutnya, (2) Saran Praktis untuk pihak relevan. Setiap saran spesifik dan bersumber dari temuan."
+        }
+    },
+    "skripsi_kuantitatif": {
+        "abstrak": {
+            "label": "Abstrak",
+            "prompt": "Tulis abstrak skripsi kuantitatif tentang '{{topic}}' dalam DUA versi: (1) Bahasa Indonesia: maks 300 kata, mencakup tujuan, metode/desain, hasil uji statistik utama, kesimpulan, diakhiri 3-5 kata kunci, (2) Bahasa Inggris: terjemahan akurat."
+        },
+        "bab1_latar_belakang": {
+            "label": "Latar Belakang Masalah",
+            "prompt": "Buatkan latar belakang masalah skripsi kuantitatif tentang '{{topic}}': (1) Kondisi ideal berdasarkan teori, (2) Data empiris/statistik kondisi nyata, (3) Kesenjangan ideal vs nyata, (4) Pentingnya variabel X terhadap Y, (5) Justifikasi pengujian statistik. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab1_identifikasi_masalah": {
+            "label": "Identifikasi Masalah",
+            "prompt": "Tuliskan identifikasi masalah skripsi kuantitatif tentang '{{topic}}'. Identifikasi dalam bentuk pernyataan masalah. Minimal 3-5 masalah."
+        },
+        "bab1_batasan_masalah": {
+            "label": "Batasan Masalah",
+            "prompt": "Tuliskan batasan masalah skripsi kuantitatif tentang '{{topic}}' yang membatasi: (1) Variabel X dan Y, (2) Populasi, (3) Lokasi, (4) Periode waktu."
+        },
+        "bab1_rumusan_masalah": {
+            "label": "Rumusan Masalah",
+            "prompt": "Buatkan rumusan masalah skripsi kuantitatif tentang '{{topic}}' dalam 2-3 pertanyaan yang menggunakan 'Apakah terdapat pengaruh/hubungan...' dan menyebut variabel X dan Y secara eksplisit."
+        },
+        "bab1_tujuan_penelitian": {
+            "label": "Tujuan Penelitian",
+            "prompt": "Tulis tujuan penelitian skripsi kuantitatif tentang '{{topic}}' yang menjawab rumusan masalah. Gunakan kata kerja: menguji, menganalisis, mengukur, membuktikan."
+        },
+        "bab1_manfaat_penelitian": {
+            "label": "Manfaat Penelitian",
+            "prompt": "Tuliskan manfaat penelitian skripsi kuantitatif tentang '{{topic}}': (1) Manfaat Teoretis, (2) Manfaat Praktis. Minimal 2 poin per bagian."
+        },
+        "bab2_landasan_teori": {
+            "label": "Landasan Teori",
+            "prompt": "Tuliskan landasan teori skripsi kuantitatif tentang '{{topic}}'. Bahas setiap variabel: (1) Definisi dari minimal 3 ahli, (2) Dimensi dan indikator, (3) Faktor-faktor yang mempengaruhi, (4) Hubungan teoretis antar variabel. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab2_penelitian_terdahulu": {
+            "label": "Penelitian Terdahulu yang Relevan",
+            "prompt": "Buatkan kajian penelitian terdahulu skripsi kuantitatif tentang '{{topic}}'. Minimal 5 penelitian dengan desain dan hasil uji hipotesis. Jelaskan orisinalitas. Gunakan referensi: {{references}}."
+        },
+        "bab2_kerangka_berpikir": {
+            "label": "Kerangka Berpikir",
+            "prompt": "Susun kerangka berpikir skripsi kuantitatif tentang '{{topic}}'. Uraikan alur logika pengaruh/hubungan variabel berdasarkan teori. Gambaran model: X lalu Y."
+        },
+        "bab2_hipotesis": {
+            "label": "Hipotesis Penelitian",
+            "prompt": "Rumuskan hipotesis skripsi kuantitatif tentang '{{topic}}' secara eksplisit: (1) H0: tidak ada pengaruh/hubungan signifikan, (2) H1/Ha: terdapat pengaruh/hubungan signifikan. Tambahkan dasar teoretis singkat."
+        },
+        "bab3_desain_penelitian": {
+            "label": "Jenis dan Desain Penelitian",
+            "prompt": "Jelaskan jenis dan desain penelitian kuantitatif untuk skripsi tentang '{{topic}}'. Uraikan: jenis penelitian, desain spesifik, dan alasan pemilihan. Dukung dengan referensi: {{references}}."
+        },
+        "bab3_lokasi_waktu": {
+            "label": "Tempat dan Waktu Penelitian",
+            "prompt": "Jelaskan tempat dan waktu penelitian skripsi kuantitatif tentang '{{topic}}'. Uraikan deskripsi lokasi, alasan pemilihan, dan timeline penelitian."
+        },
+        "bab3_populasi_sampel": {
+            "label": "Populasi dan Sampel",
+            "prompt": "Tuliskan populasi dan sampel skripsi kuantitatif tentang '{{topic}}': (1) Definisi populasi, (2) Teknik sampling dan alasan, (3) Cara menentukan jumlah sampel sertakan rumus, (4) Kriteria inklusi/eksklusi."
+        },
+        "bab3_variabel_penelitian": {
+            "label": "Variabel Penelitian",
+            "prompt": "Definisikan variabel skripsi kuantitatif tentang '{{topic}}' secara operasional: (1) Variabel X definisi konseptual dan operasional, (2) Variabel Y definisi konseptual dan operasional, (3) Indikator pengukuran, (4) Skala pengukuran."
+        },
+        "bab3_teknik_pengumpulan_data": {
+            "label": "Teknik Pengumpulan Data",
+            "prompt": "Jelaskan teknik pengumpulan data skripsi kuantitatif tentang '{{topic}}': (1) Jenis instrumen, (2) Prosedur pengumpulan, (3) Skala pengukuran."
+        },
+        "bab3_instrumen_penelitian": {
+            "label": "Instrumen Penelitian",
+            "prompt": "Jelaskan instrumen penelitian skripsi kuantitatif tentang '{{topic}}': (1) Kisi-kisi instrumen, (2) Uji Validitas, (3) Uji Reliabilitas dengan Cronbach Alpha."
+        },
+        "bab3_uji_prasyarat": {
+            "label": "Uji Prasyarat Analisis",
+            "prompt": "Jelaskan uji prasyarat analisis: (1) Uji Normalitas, (2) Uji Homogenitas jika komparatif, (3) Uji Linearitas jika regresi. Jelaskan pentingnya sebelum uji hipotesis."
+        },
+        "bab3_teknik_analisis_data": {
+            "label": "Teknik Analisis Data",
+            "prompt": "Tuliskan teknik analisis data skripsi kuantitatif tentang '{{topic}}': (1) Statistik deskriptif, (2) Uji hipotesis yang dipilih dan alasan, (3) Kriteria keputusan, (4) Software yang digunakan. Dukung dengan referensi: {{references}}."
+        },
+        "bab4_deskripsi_data": {
+            "label": "Deskripsi Data",
+            "prompt": "Tuliskan deskripsi data statistik: (1) Statistik deskriptif per variabel, (2) Distribusi frekuensi, (3) Interpretasi makna. Gunakan deskripsi tabel dalam narasi."
+        },
+        "bab4_uji_prasyarat": {
+            "label": "Hasil Uji Prasyarat",
+            "prompt": "Sajikan hasil uji prasyarat: (1) Hasil uji, (2) Nilai statistik dan signifikansi, (3) Bandingkan dengan kriteria, (4) Kesimpulan apakah asumsi terpenuhi."
+        },
+        "bab4_uji_hipotesis": {
+            "label": "Uji Hipotesis",
+            "prompt": "Sajikan hasil uji hipotesis: (1) Hipotesis yang diuji, (2) Nilai t/F/r hitung dan signifikansi, (3) Bandingkan dengan nilai kritis, (4) Keputusan H0, (5) Kesimpulan singkat."
+        },
+        "bab4_pembahasan": {
+            "label": "Pembahasan",
+            "prompt": "Buat pembahasan skripsi kuantitatif tentang '{{topic}}'. Untuk setiap hasil: (1) Interpretasikan makna statistik, (2) Hubungkan dengan teori Bab II, (3) Bandingkan dengan penelitian terdahulu, (4) Jelaskan faktor-faktor yang mempengaruhi. Gunakan referensi: {{references}}. Panjang sekitar {{word_count}} kata."
+        },
+        "bab5_kesimpulan": {
+            "label": "Kesimpulan",
+            "prompt": "Tuliskan kesimpulan skripsi kuantitatif tentang '{{topic}}' dalam poin-poin: (1) Nyatakan hasil uji hipotesis secara tegas, (2) Sebut arah pengaruh/hubungan, (3) Singkat dan padat."
+        },
+        "bab5_saran": {
+            "label": "Saran",
+            "prompt": "Buatkan saran skripsi kuantitatif tentang '{{topic}}': (1) Saran Teoretis untuk penelitian selanjutnya, (2) Saran Praktis untuk pihak terkait. Setiap saran berangkat dari hasil penelitian."
+        }
+    }
+}
